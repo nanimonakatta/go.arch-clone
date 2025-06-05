@@ -1,0 +1,52 @@
+:root {
+    --mainBg : rgb(18, 17, 16);
+    --white-color: white;
+    --gold-color: rgb(221, 179, 73);
+    --transparent-white: rgba(255, 255, 255, 0.15);
+    --whitesmoke-color: whitesmoke;
+    --semi-transparent: rgba(255, 255, 255, 0.5);
+    --montserrat : "Montserrat", sans-serif;
+    --barlow : "Barlow Condensed", sans-serif;
+}
+.section4 {
+    width: 100%;
+    min-height: 100svh;
+    display: flex;
+    justify-content: center;
+    background-color: var(--mainBg);
+}
+.section4-container {
+    width: 60%;
+    min-height: 100svh;
+    border-left: 1px solid var(--transparent-white);
+    border-right: 1px solid var(--transparent-white);
+}
+.large-num {
+    margin: auto;
+    padding: 2rem 0;
+    width: fit-content;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    font-family: var(--barlow);
+    text-transform: uppercase;
+    line-height: 0.8;
+}
+.section4-container .num {
+    font-size: clamp(10rem, 10rem + 10vw, 20rem);
+    background: url('../Images/section34.jpeg') no-repeat center;
+    background-size: cover;
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    filter: brightness(0.8) grayscale(0.5) contrast(1.2);
+}
+.section4-container .text {
+    font-size: clamp(1rem, 0.8rem + 0.5vw, 1.3rem);
+    font-weight: 500;
+    line-height: 1;
+    color: var(--gold-color);
+}
+.section4-container .white-text {
+    color: var(--whitesmoke-color);
+}
