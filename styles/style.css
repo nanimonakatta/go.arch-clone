@@ -278,6 +278,9 @@ summary {
 .section1-div2 button:hover {
     transform: scale(1.05);
 }
+.section1-div2 button:active {
+    transform: scale(1);
+}
 .section1-div2 button i {
     margin-left: 0.2rem;
 }
