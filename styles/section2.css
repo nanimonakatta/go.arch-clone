@@ -46,7 +46,7 @@
     font-weight: 500;
     text-transform: uppercase;
     text-align: center;
-    letter-spacing: 0.5rem;
+    letter-spacing: clamp(0.2rem, 0.2rem + 0.3vw, 0.5rem);
     white-space: nowrap;
 }
 .section2-container h2 span, .projects-title span {

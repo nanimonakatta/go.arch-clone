@@ -1,3 +1,4 @@
+const main = document.querySelector('.main');
 const prevBtn = document.querySelector('.prev-text');
 const nextBtn = document.querySelector('.next-text');
 const s3prevBtn = document.querySelector('.s3-prev');
@@ -27,23 +28,25 @@ const secImgArr = [
     'Images/section31.jpeg',
     'Images/section32.jpeg',
     'Images/section33.jpeg',
-    'Images/section34.jpeg'
+    'Images/section34.jpeg',
+    'Images/section35.jpeg'
 ];
 const secHeadingArr = [
     'concert hall in new york',
     'modern hotel in london', 
     'residential care project in paris', 
     'modern project in rotorua', 
-    'architectural marvel in tokyo'
+    'architectural marvel in tokyo',
+    'wavy building in brasil'
 ] 
 let i = 0;
-let isDetailsOpen = false;
 
 checkDevice();
 changingPages();
 loadImageEarly(imageArr);
 generateDivs();
 scrollLeft();
+closeDeails();
 
 smallDevices.addEventListener('change', checkDevice);
 largeDevices.addEventListener('change', checkDevice);
@@ -127,16 +130,20 @@ function scrollLeft() {
     s3prevBtn.addEventListener('click', function() {
         section3.scrollBy({
             left: -section3.clientWidth / 4,
-            behavior: "smooth"
+            behavior: "auto"
         });
     });
     s3nextBtn.addEventListener('click', function() {
         section3.scrollBy({
             left: section3.clientWidth / 4,
-            behavior: "smooth"
+            behavior: "auto"
         });
     });
 }
 function closeDeails() {
-
+    main.addEventListener('click', function() {
+        if (smallDevices.matches && details.hasAttribute('open')) {
+            details.removeAttribute('open');
+        }
+    });
 }

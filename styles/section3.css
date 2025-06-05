@@ -6,7 +6,7 @@
     width: 100%;
     height: 100svh;
     display: grid;
-    grid-template-columns: repeat(5, 25%);
+    grid-template-columns: repeat(6, 25%);
     grid-template-rows: 100%;
     overflow-x:scroll;
     scroll-behavior: smooth;
@@ -122,5 +122,9 @@
 }
 .section3-page5 {
     background: url(../Images/section34.jpeg) 50% 0;
+    background-size: cover;
+}
+.section3-page6 {
+    background: url(../Images/section35.jpeg) 50% 0;
     background-size: cover;
 }
