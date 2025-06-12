@@ -224,15 +224,15 @@
                         </div>
                         <form action="index.html" method="post">
                             <div>
-                                <input type="text" placeholder="Name" required>
-                                <input type="email" placeholder="Email" required>
+                                <input type="text" placeholder="Name" required maxlength="20" style="text-transform: uppercase;">
+                                <input type="email" placeholder="Email" required max="30" style="text-transform: lowercase;">
                             </div>
                             <div>
-                                <input type="number" placeholder="Phone" required>
-                                <input type="text" placeholder="Company">
+                                <input type="number" placeholder="Phone" required min="7" max="10">
+                                <input type="text" placeholder="Company" maxlength="30">
                             </div>
                             <div class="textarea-div">
-                                <textarea name="message" id="message" placeholder="Message"></textarea>
+                                <textarea name="message" id="message" placeholder="Message" maxlength="200"></textarea>
                             </div>
                             <button type="submit" class="send-btn">
                                 Send
