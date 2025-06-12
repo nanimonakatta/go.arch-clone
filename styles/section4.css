@@ -215,6 +215,9 @@
     outline: none;
     border-radius: 5px;
 }
+.contacts-content form input::placeholder {
+    text-transform: capitalize;
+}
 .contacts-content form input::-webkit-outer-spin-button {
     display: none;
 }
@@ -229,6 +232,7 @@
     height: 100%;
     font-family: var(--montserrat);
     font-size: clamp(0.6rem, 0.35rem + 0.35vw, 0.7rem);
+    text-transform: capitalize;
     border: none;
     outline: none;
     border-radius: 5px;
