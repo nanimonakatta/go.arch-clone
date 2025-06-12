@@ -17,11 +17,11 @@ const pagesArr = ['page1',
     'page5'
 ];
 const imageArr = [
-    '../Images/page1.jpeg', 
-    '../Images/page2.jpeg',
-    '../Images/page3.jpeg',
-    '../Images/page4.jpeg',
-    '../Images/page5.jpeg'
+    './Images/page1.jpeg', 
+    './Images/page2.jpeg',
+    './Images/page3.jpeg',
+    './Images/page4.jpeg',
+    './Images/page5.jpeg'
 ];
 const secImgArr = [
     'Images/page1.jpeg',
