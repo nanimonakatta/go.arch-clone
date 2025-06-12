@@ -228,11 +228,11 @@
                                 <input type="email" placeholder="Email" required max="30" style="text-transform: lowercase;">
                             </div>
                             <div>
-                                <input type="number" placeholder="Phone" required min="7" max="10">
+                                <input type="number" placeholder="Phone" required maxlength="10">
                                 <input type="text" placeholder="Company" maxlength="30">
                             </div>
                             <div class="textarea-div">
-                                <textarea name="message" id="message" placeholder="Message" maxlength="200"></textarea>
+                                <textarea name="message" id="message" placeholder="Message" maxlength="200" autocapitalize="sentences"></textarea>
                             </div>
                             <button type="submit" class="send-btn">
                                 Send
