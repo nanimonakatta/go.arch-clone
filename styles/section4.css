@@ -197,8 +197,10 @@
     position: relative;
     display: flex;
     justify-content: flex-start;
+    align-items:center;
     gap: 1rem;
-    flex: 2;
+    flex: 1;
+    flex-wrap: wrap;
 }
 .contacts-content form div {
     display: flex;
