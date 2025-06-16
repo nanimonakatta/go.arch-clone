@@ -199,7 +199,6 @@
     justify-content: flex-start;
     gap: 1rem;
     flex: 1;
-    flex-wrap: wrap;
 }
 .contacts-content form div {
     display: flex;
